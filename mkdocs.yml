@@ -1,0 +1,52 @@
+site_name: SREBrasil 2022
+
+theme:
+  name: material
+  logo: images/logo.png
+  favicon: images/favicon.png
+  icon:
+    tag:
+      srebrasil_dicas: octicons/light-bulb-16
+      srebrasil_docks: material/file-document-check
+      srebrasil_talks: octicons/broadcast-24
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+  language: pt-BR
+  custom_dir: overrides
+  palette: 
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Alterar para modo escuro
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Alterar para modo claro
+
+
+extra:
+  homepage: http://www.srebrasil.com
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+
+plugins:
+  - tags:
+      enabled: true
+      tags_slugify_separator: "-"
+      tags_file: tags.md
+  - search:
+      lang: pt
+  
+repo_url: https://github.com/srebrasil/srebrasil2022.git
+repo_name: SRE Brasil 2022
