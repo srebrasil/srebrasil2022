@@ -50,3 +50,7 @@ plugins:
   
 repo_url: https://github.com/srebrasil/srebrasil2022.git
 repo_name: SRE Brasil 2022
+
+nav:
+  - Home: 'index.md'
+  - v1.0: 'v1.0/index.md'
